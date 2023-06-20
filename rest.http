@@ -1,0 +1,31 @@
+GET http://localhost:5000/items
+
+### create a item
+POST http://localhost:5000/items
+Content-Type: application/json
+
+{
+    "name":"iPhone 14 Pro",
+    "price": 60000
+}
+
+### Get a item by id
+
+GET  http://localhost:5000/items/64919d2ca8112a7d968884e5
+
+### Update a item by id
+
+PATCH  http://localhost:5000/items/64919e55a8112a7d968884f1
+Content-Type: application/json
+
+{
+    "price": 48999
+}
+
+### Delete a item by id
+
+DELETE  http://localhost:5000/items/64919e48a8112a7d968884eb
+
+### 404 route not found
+
+GET http://localhost:5000/abc
